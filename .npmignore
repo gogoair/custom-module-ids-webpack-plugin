@@ -1,0 +1,7 @@
+test
+node_modules
+.idea
+.directory
+.DS_Store
+package-lock.json
+yarn.lock

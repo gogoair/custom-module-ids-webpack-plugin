@@ -1,0 +1,27 @@
+{
+  "name": "custom-module-ids-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Absolute control over module IDs in webpack bundles",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gogoair/custom-module-ids-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "module"
+  ],
+  "author": "Miloš Rašić",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gogoair/custom-module-ids-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/gogoair/custom-module-ids-webpack-plugin#readme",
+  "dependencies": {
+    "schema-utils": "^0.4.5"
+  }
+}
