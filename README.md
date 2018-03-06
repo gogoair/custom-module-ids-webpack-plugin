@@ -2,6 +2,8 @@
 
 Absolute control over module IDs in webpack bundles. Should support webpack versions 3 and 4 at least. Feel free to make a PR to support earlier versions.
 
+[![npm version](https://badge.fury.io/js/custom-module-ids-webpack-plugin.svg)](http://badge.fury.io/js/custom-module-ids-webpack-plugin)
+
 ## Install
 
 ```
