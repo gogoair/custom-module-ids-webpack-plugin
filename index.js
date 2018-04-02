@@ -14,6 +14,9 @@ class CustomModuleIdsPlugin {
 					description: "Function called to generate ID of each module. Return value is used as module ID.",
 					instanceof: "Function",
 				},
+				callWhenMissingLibident: {
+					"type": "boolean",
+				},
 			},
 			required: ['idFunction'],
 		}, this.options, "Custom Module IDs Plugin");
@@ -21,10 +24,10 @@ class CustomModuleIdsPlugin {
 
 	_processModules(modules, context) {
 		for (const module of modules) {
-			if (module.id === null && module.libIdent) {
-				module.id = this.options.idFunction(module.libIdent({
+			if (module.id === null && (module.libIdent || this.options.callWhenMissingLibident)) {
+				module.id = this.options.idFunction(module.libIdent ? module.libIdent({
 					context,
-				}), module);
+				}) : null, module);
 			}
 		}
 	}
